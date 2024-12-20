@@ -23,12 +23,12 @@ const userSchema = new mongoose.Schema({
   profilePic: {
     type: String,
     default: "",
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now, 
-  },
-})
+  }
+  // createdAt: {
+  //   type: Date,
+  //   default: Date.now, 
+  // },
+},{timestamps : true })
 
 const User = mongoose.model('User', userSchema);
 export default User;
