@@ -4,7 +4,7 @@ import Conversation from "../models/conversation.model.js";
 export const getMessages = async (req,res) => {
   try {
     const {id : userToChatId } = req.params;
-    const senderId = req.user._id;
+    const senderId = req.user._id; // we could use req.user.id cause we have protectRoute middleware
 
     const conversation = await Conversation.findOne({
       partecipants : { $all : [senderId, userToChatId]}
