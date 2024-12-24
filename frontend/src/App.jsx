@@ -1,11 +1,13 @@
-
+import Login from "./pages/login/Login";
+import "./index.css";
 function App() {
-
   return (
     <>
-      <div className=" text-green-600 font-bold text-3xl" >Hi </div>
+      <div className="p-4 h-screen flex items-center justify-center">
+        <Login />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
