@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <div className="p-4 h-screen flex justify-center items-center ">
-        <Signup />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
