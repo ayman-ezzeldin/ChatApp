@@ -10,5 +10,7 @@ export default {
   plugins: [
     // eslint-disable-next-line no-undef
     require('daisyui'),
+    // eslint-disable-next-line no-undef
+    require('tailwind-scrollbar'),
   ],
 }
