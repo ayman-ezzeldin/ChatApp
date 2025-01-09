@@ -15,7 +15,7 @@ const Signup = () => {
   // eslint-disable-next-line no-unused-vars
   const {loading,signup} = useSignup()
   
-  async function  handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();    
     await signup(inputs)
   }
