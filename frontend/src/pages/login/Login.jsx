@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 
-const Login = () => {
+const Login = ({signUpClicked,setSignUpClicked}) => {
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto" >
       <div className="w-full p-6 rounded-lg shadow-md bg-gray-400 backdrop-saturate-150 backdrop-blur-lg bg-opacity-10 ">
@@ -20,7 +20,7 @@ const Login = () => {
             </label>
             <input type="password" placeholder="Enter Password" className="input input-bordered w-full h-10" />
           </div>
-          <Link to="/signup" className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500" > {"Don't"} have an account? </Link>
+          <Link to="/signup" onclick={() => setSignUpClicked(!signUpClicked)} className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500" > {"Don't"} have an account? </Link>
           <div >
             <button className="btn btn-block btn-sm border-none mt-2 h-10 text-gray-200 bg-blue-500 hover:bg-blue-600 " >Login</button>
           </div>
