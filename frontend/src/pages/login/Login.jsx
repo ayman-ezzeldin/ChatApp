@@ -8,7 +8,6 @@ const Login = ({signUpClicked,setSignUpClicked}) => {
     password: "",
   })
 
-  // eslint-disable-next-line no-unused-vars
   const {loading,login} = useLogin()
 
   const handleSubmit = async (e) => {
@@ -42,7 +41,11 @@ const Login = ({signUpClicked,setSignUpClicked}) => {
           </div>
           <Link to="/signup" onclick={() => setSignUpClicked(!signUpClicked)} className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500" > {"Don't"} have an account? </Link>
           <div >
-            <button className="btn btn-block btn-sm border-none mt-2 h-10 text-gray-200 bg-blue-500 hover:bg-blue-600 " >Login</button>
+            <button 
+            disabled={loading}
+            className="btn btn-block btn-sm border-none mt-2 h-10 text-gray-200 bg-blue-500 hover:bg-blue-600 ">
+              {loading ? (<span className="loading loading-spinner"></span>) : "Login"}
+              </button>
           </div>
         </form>
       </div>
