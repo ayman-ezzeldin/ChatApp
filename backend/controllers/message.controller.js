@@ -59,7 +59,7 @@ export const sendMessage = async (req,res) => {
 
     await Promise.all([conversation.save(), newMessage.save()]) // will run them as parallel
 
-    res.status(201).json({message : `${newMessage.message} sent successfully`})
+    res.status(201).json({message : `${newMessage.message}`})
     
 
   } catch (error) {
