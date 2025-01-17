@@ -3,6 +3,7 @@ import MessageInput from "./MessageInput"
 import {BiChat} from 'react-icons/bi'
 import useConversation from "../../zustand/useConversation"
 import { useEffect } from "react"
+import { useAuthContext } from "../../context/AuthContext"
 const MessageContainer = () => {
   const {selectedConversation, setSelectedConversation} = useConversation();
 
@@ -34,9 +35,10 @@ const MessageContainer = () => {
 export default MessageContainer
 
 const NoChatSelected = () => {
+  const {authUser} = useAuthContext();
   return (
     <div className="flex flex-col items-center justify-center w-full min-w-96 m-auto text-white" >
-      <h1 className="text-2xl font-semibold" >Welcom 👋 Ayman Ezz ❄</h1>
+      <h1 className="text-2xl font-semibold" >Welcom 👋 {authUser?.fullName} ❄</h1>
       <p className=" text-xl mb-2 text-gray-200">Select a chat to start messaging</p>
       <BiChat className="w-20 h-20 " />
     </div>

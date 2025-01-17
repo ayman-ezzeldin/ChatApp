@@ -39,7 +39,7 @@ const Login = ({signUpClicked,setSignUpClicked}) => {
               onChange={(e)=> setInputs({...inputs, password : e.target.value})}
               className="input input-bordered w-full h-10" />
           </div>
-          <Link to="/signup" onclick={() => setSignUpClicked(!signUpClicked)} className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500" > {"Don't"} have an account? </Link>
+          <Link to="/signup" onClick={() => setSignUpClicked(!signUpClicked)} className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500" > {"Don't"} have an account? </Link>
           <div >
             <button 
             disabled={loading}
