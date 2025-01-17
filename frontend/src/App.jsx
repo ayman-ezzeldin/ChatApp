@@ -3,7 +3,7 @@ import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import { useAuthContext } from "./context/authContext";
+import { useAuthContext } from "./context/AuthContext";
 
 
 function App() {
