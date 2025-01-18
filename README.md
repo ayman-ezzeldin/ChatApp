@@ -55,16 +55,16 @@ Welcome to **Chat Application**, a real-time messaging platform built with moder
 
 
 ### Home Page
-![SignUp](./public/ReadMe/signup.png)
+![SignUp](/frontend/public/ReadMe/signup.png)
 
 ### Partners
-![Login](./public/ReadMe/login.png)
+![Login](/frontend/public/ReadMe/login.png)
 
 ### Team Structure
-![Hello](./public/ReadMe/hello.png)
+![Hello](/frontend/public/ReadMe/hello.png)
 
 ### Form
-![Chat](./public/ReadMe/chat.png)
+![Chat](/frontend/public/ReadMe/chat.png)
 
 
 
