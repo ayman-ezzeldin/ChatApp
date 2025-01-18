@@ -3,7 +3,7 @@ import GenderCheckbox from "./GenderCheckbox";
 import { useState } from "react";
 import useSignup from "../../hooks/useSignup";
 
-const Signup = () => {
+const Signup = ({setSignUpClicked}) => {
   const [inputs, setInputs] = useState({
     fullName: "",
     username: "",
@@ -97,6 +97,7 @@ const Signup = () => {
           />
           <Link
             to="/login"
+            onClick={() => setSignUpClicked(false)}
             className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500"
           >
             {" "}

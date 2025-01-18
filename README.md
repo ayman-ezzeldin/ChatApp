@@ -53,6 +53,21 @@ Welcome to **Chat Application**, a real-time messaging platform built with moder
   - **Git**: For version control.
 
 
+
+### Home Page
+![Home Page Screenshot](./public/assets/ReadMe/signup.png)
+
+### Partners
+![Partners Screenshot](./public/assets/ReadMe/login.png)
+
+### Team Structure
+![Team Structure Screenshot](./public/assets/ReadMe/hello.png)
+
+### Form
+![Form Screenshot](./public/assets/ReadMe/chat.png)
+
+
+
 ## **Installation** 🚀
 
 ### Prerequisites

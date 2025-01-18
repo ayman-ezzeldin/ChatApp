@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import useLogin from "../../hooks/useLogin";
 import { useState } from "react";
 
-const Login = ({ signUpClicked, setSignUpClicked }) => {
+const Login = ({setSignUpClicked }) => {
   const [inputs, setInputs] = useState({
     username: "",
     password: "",
@@ -54,7 +54,7 @@ const Login = ({ signUpClicked, setSignUpClicked }) => {
           </div>
           <Link
             to="/signup"
-            onClick={() => setSignUpClicked(!signUpClicked)}
+            onClick={() => setSignUpClicked(true)}
             className="text-sm inline-block text-gray-300 mt-2 hover:underline hover:text-blue-500"
           >
             {" "}
