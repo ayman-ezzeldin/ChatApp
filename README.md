@@ -70,28 +70,35 @@ Welcome to **Chat Application**, a real-time messaging platform built with moder
    
 Install backend dependencies
   ```bash
-  npm run server
+  npm install
 ```
 Install frontend dependencies
 ```bash
 cd ../frontend
 npm install
+```
 
 3 **Set up environment variables:**
+```
 MONGO_URI=mongodb://localhost:27017/chat-app
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
+```
 
 4 **Start the backend server:**
+```
 npm run server
-
+```
 5 **Start the frontend development server:**
+```
 cd frontend
 npm run dev
+```
 
 6 **Open the application:**
+```
 Visit http://localhost:3000 in your browser.
-
+```
 
 ## **API Endpoints** 🌐
 
