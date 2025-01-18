@@ -116,6 +116,31 @@ Visit http://localhost:3000 in your browser.
 
 ---
 
+Folder Structure 📂
+
+chat-application/
+├── backend/
+│   ├── controllers/         # Route handlers
+│   ├── models/              # Mongoose models
+│   ├── routes/              # API routes
+│   ├── utils/               # Utility functions (e.g., token generation)
+│   ├── server.js            # Entry point for the backend
+│   └── .env                 # Environment variables
+├── frontend/
+│   ├── public/              # Static assets
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── context/         # React context providers
+│   │   ├── hooks/           # Custom React hooks
+│   │   ├── pages/           # Application pages
+│   │   ├── assets/          # Images, sounds, etc.
+│   │   ├── App.js           # Main application component
+│   │   └── index.js         # Entry point for the frontend
+│   └── package.json         # Frontend dependencies
+├── README.md                # Project documentation
+└── .gitignore               # Files and folders to ignore in Git
+
+
 ## **Contributing** 🤝
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
