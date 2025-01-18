@@ -52,20 +52,6 @@ Welcome to **Chat Application**, a real-time messaging platform built with moder
   - **Postman**: For testing API endpoints.
   - **Git**: For version control.
 
----
-
-## **Screenshots** 📸
-
-### **Signup Page**
-![Signup Page](https://via.placeholder.com/600x400.png?text=Signup+Page)
-
-### **Login Page**
-![Login Page](https://via.placeholder.com/600x400.png?text=Login+Page)
-
-### **Chat Interface**
-![Chat Interface](https://via.placeholder.com/600x400.png?text=Chat+Interface)
-
----
 
 ## **Installation** 🚀
 
@@ -81,11 +67,13 @@ Welcome to **Chat Application**, a real-time messaging platform built with moder
    cd chat-application
 
 2. **Install dependencies**
-# Install backend dependencies
-cd backend
-npm install
-
-# Install frontend dependencies
+   
+Install backend dependencies
+  ```bash
+  npm run server
+```
+Install frontend dependencies
+```bash
 cd ../frontend
 npm install
 
