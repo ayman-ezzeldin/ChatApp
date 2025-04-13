@@ -21,8 +21,8 @@ export const SocketContextProvider = ({ children }) => {
 					userId: authUser._id,
 				},
 			});
-
-			setSocket(socket);
+			// this is used to send events to all the connected clients && give me alot of warnning in console
+			// setSocket(socket);
 
 			// socket.on() is used to listen to the events. can be used both on client and server side
 			socket.on("getOnlineUsers", (users) => {
